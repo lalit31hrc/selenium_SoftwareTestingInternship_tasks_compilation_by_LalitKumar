@@ -1,7 +1,6 @@
 package com.ama.qa.base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
@@ -31,11 +30,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\Vishal\\eclipse-workspace\\NullClassSeleniumProject\\src\\main\\java\\com\\ama\\qa\\config\\config.properties");
-			prop.load(ip);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			prop.load(getClass().getClassLoader().getResourceAsStream("com/ama/qa/config/config.properties"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -45,17 +40,16 @@ public class TestBase {
 	}
 
 	public static void initialization() {
-		String browsername = prop.getProperty("browser");
+		String browsername = prop.getProperty("BROWSER");
 
 		if (browsername.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "E:\\libs\\chromedriver-win64\\chromedriver.exe");
 			driver = getdriver();
 
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2000));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
-		driver.get(prop.getProperty("url"));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get(prop.getProperty("URL"));
 	}
 
 	/*public static void myWait()

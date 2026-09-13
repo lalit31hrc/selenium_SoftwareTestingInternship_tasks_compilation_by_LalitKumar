@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import java.time.Duration;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import com.ama.qa.base.TestBase;
 
 /* 
@@ -22,7 +24,7 @@ public class AmazonLoginPage extends TestBase{
 	@FindBy(id = "ap_password")@CacheLookup WebElement password;
 	@FindBy(id = "signInSubmit")WebElement signInSubmit;
 	
-	
+	WebDriverWait wait = new WebDriverWait(getdriver(), Duration.ofSeconds(15));
 	public AmazonLoginPage(){
 		PageFactory.initElements(getdriver(), this);
 	}
@@ -30,8 +32,10 @@ public class AmazonLoginPage extends TestBase{
 	public String gettitle(){
 		return getdriver().getTitle();
 	}
+
 	
 	public void enterEmailOrPhone(String emailOrPhone){
+		wait.until(ExpectedConditions.visibilityOf(email));
 		email.sendKeys(emailOrPhone);
 	}
 	
@@ -39,6 +43,7 @@ public class AmazonLoginPage extends TestBase{
 		continueButton.click();
 	}
 	public void enterPassword(String passwordValue){
+		wait.until(ExpectedConditions.visibilityOf(password));
 		password.sendKeys(passwordValue);
 	}
 	

@@ -24,7 +24,7 @@ import com.ama.qa.base.TestBase;
 */
 public class AmazonSearchProductsPage extends TestBase {
 
-	@FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']//span[@class='a-color-state a-text-bold']")
+	@FindBy(xpath = "//span[@class='a-color-state a-text-bold']")
 	WebElement searchedProductsPageLabel;
 	WebElement serachProductPanel;
 
@@ -42,21 +42,27 @@ public class AmazonSearchProductsPage extends TestBase {
 	}
 
 	public void clickOnProduct(String productName) {
-		serachProductPanel = wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//span[contains(text(), '" + productName + "')]")));
-		oldWindow = getdriver().getWindowHandle();
-		serachProductPanel.click();
+	    WebElement productLink = wait.until(ExpectedConditions
+	            .visibilityOfElementLocated(By.xpath(
+	            	 "//div[@data-component-type='s-search-result']//a[.//h2//span[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '"
+	            	                + productName.toLowerCase() + "')]]")));
 
-		newWindows = getdriver().getWindowHandles();
+	    oldWindow = getdriver().getWindowHandle();
+	    productLink.click();
 
-		for (String window : newWindows) {
-			if (!oldWindow.equalsIgnoreCase(window)) {
-				getdriver().switchTo().window(window);
+	    try {
+	        new WebDriverWait(getdriver(), Duration.ofSeconds(5))
+	            .until(driver -> driver.getWindowHandles().size() > 1);
 
-				break;
-			}
-		}
-		
+	        newWindows = getdriver().getWindowHandles();
+	        for (String window : newWindows) {
+	            if (!oldWindow.equalsIgnoreCase(window)) {
+	                getdriver().switchTo().window(window);
+	                break;
+	            }
+	        }
+	    } catch (org.openqa.selenium.TimeoutException e) {
+	        // Same-tab navigation — nothing more to do
+	    }
 	}
-
 }

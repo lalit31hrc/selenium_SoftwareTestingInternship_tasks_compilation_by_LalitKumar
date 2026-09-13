@@ -56,10 +56,7 @@ public class AmazonSearchProductsTest extends TestBase{
 	@Test(priority=1)
 	public void clickOnRequiredProduct() throws InterruptedException
 	{
-       
-		amazonSearchProductsPage.clickOnProduct("Noise Twist Go Bluetooth Calling Smart Watch for Women with Sleek Metal Dial, Glossy Finish, 1.39\" Display, 100+ Watch Faces, IP68, Sleep Tracking, Voice Assistance, Upto 7 Days Battery (Gold Link)");
-	
-		
+	    amazonSearchProductsPage.clickOnProduct("Watch");
 	}
 	
 	

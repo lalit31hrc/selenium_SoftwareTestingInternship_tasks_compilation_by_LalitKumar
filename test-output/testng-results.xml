@@ -1,61 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-23T05:47:36 IST" name="Suite" finished-at="2024-09-23T05:48:18 IST" duration-ms="42131">
+  <suite started-at="2026-09-13T19:23:09 IST" name="Suite" finished-at="2026-09-13T19:23:39 IST" duration-ms="30053">
     <groups>
     </groups>
-    <test started-at="2024-09-23T05:47:36 IST" name="Test" finished-at="2024-09-23T05:48:18 IST" duration-ms="42131">
+    <test started-at="2026-09-13T19:23:09 IST" name="Test" finished-at="2026-09-13T19:23:39 IST" duration-ms="30053">
       <class name="testcases.AmazonProductDetailsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductDetailsTest@563f38c4]" started-at="2024-09-23T05:47:36 IST" name="setup" finished-at="2024-09-23T05:47:36 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductDetailsTest@6025e1b6]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyProductDetailsAndAddToCart()[pri:2, instance:testcases.AmazonProductDetailsTest@563f38c4]" started-at="2024-09-23T05:47:52 IST" name="VerifyProductDetailsAndAddToCart" finished-at="2024-09-23T05:48:09 IST" duration-ms="16990" status="PASS">
+        <test-method signature="VerifyProductDetailsAndAddToCart()[pri:2, instance:testcases.AmazonProductDetailsTest@6025e1b6]" started-at="2026-09-13T19:23:21 IST" name="VerifyProductDetailsAndAddToCart" finished-at="2026-09-13T19:23:33 IST" duration-ms="11862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductDetailsAndAddToCart -->
       </class> <!-- testcases.AmazonProductDetailsTest -->
       <class name="testcases.AmazonLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonLoginTest@117159c0]" started-at="2024-09-23T05:47:36 IST" name="setup" finished-at="2024-09-23T05:47:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonLoginTest@4c402120]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="amazonLogin()[pri:4, instance:testcases.AmazonLoginTest@117159c0]" started-at="2024-09-23T05:48:10 IST" name="amazonLogin" finished-at="2024-09-23T05:48:14 IST" duration-ms="4041" status="PASS">
+        <test-method signature="amazonLogin()[pri:4, instance:testcases.AmazonLoginTest@4c402120]" started-at="2026-09-13T19:23:34 IST" name="amazonLogin" finished-at="2026-09-13T19:23:39 IST" duration-ms="4844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonLogin -->
       </class> <!-- testcases.AmazonLoginTest -->
       <class name="testcases.ShoppingCartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.ShoppingCartTest@543295b0]" started-at="2024-09-23T05:47:39 IST" name="setup" finished-at="2024-09-23T05:47:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.ShoppingCartTest@22ff4249]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SearchForAProduct()[pri:3, instance:testcases.ShoppingCartTest@543295b0]" started-at="2024-09-23T05:48:09 IST" name="SearchForAProduct" finished-at="2024-09-23T05:48:10 IST" duration-ms="321" status="PASS">
+        <test-method signature="SearchForAProduct()[pri:3, instance:testcases.ShoppingCartTest@22ff4249]" started-at="2026-09-13T19:23:33 IST" name="SearchForAProduct" finished-at="2026-09-13T19:23:34 IST" duration-ms="1091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchForAProduct -->
       </class> <!-- testcases.ShoppingCartTest -->
       <class name="testcases.AmazonSearchProductsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonSearchProductsTest@173ed316]" started-at="2024-09-23T05:47:36 IST" name="setup" finished-at="2024-09-23T05:47:39 IST" duration-ms="2364" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="serachedProductPageOpened()[pri:0, instance:testcases.AmazonSearchProductsTest@173ed316]" started-at="2024-09-23T05:47:39 IST" name="serachedProductPageOpened" finished-at="2024-09-23T05:47:52 IST" duration-ms="12874" status="PASS">
+        <test-method signature="serachedProductPageOpened()[pri:0, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-13T19:23:09 IST" name="serachedProductPageOpened" finished-at="2026-09-13T19:23:20 IST" duration-ms="11166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serachedProductPageOpened -->
-        <test-method signature="clickOnRequiredProduct()[pri:1, instance:testcases.AmazonSearchProductsTest@173ed316]" started-at="2024-09-23T05:47:52 IST" name="clickOnRequiredProduct" finished-at="2024-09-23T05:47:52 IST" duration-ms="781" status="PASS">
+        <test-method signature="clickOnRequiredProduct()[pri:1, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-13T19:23:20 IST" name="clickOnRequiredProduct" finished-at="2026-09-13T19:23:21 IST" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnRequiredProduct -->
       </class> <!-- testcases.AmazonSearchProductsTest -->
       <class name="testcases.AmazonProductCheckoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductCheckoutTest@3e27ba32]" started-at="2024-09-23T05:47:33 IST" name="setup" finished-at="2024-09-23T05:47:36 IST" duration-ms="3387" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductCheckoutTest@327514f]" started-at="2026-09-13T19:23:07 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="1517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="useAddress()[pri:5, instance:testcases.AmazonProductCheckoutTest@3e27ba32]" started-at="2024-09-23T05:48:14 IST" name="useAddress" finished-at="2024-09-23T05:48:18 IST" duration-ms="4574" status="PASS">
+        <test-method signature="useAddress()[pri:5, instance:testcases.AmazonProductCheckoutTest@327514f]" started-at="2026-09-13T19:23:39 IST" name="useAddress" finished-at="2026-09-13T19:23:39 IST" duration-ms="258" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Checkout blocked: selected product is unavailable/restricted from this seller (Amazon OOS page). This is a live-inventory/seller limitation, not a code defect.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Checkout blocked: selected product is unavailable/restricted from this seller (Amazon OOS page). This is a live-inventory/seller limitation, not a code defect.
+at com.ama.qa.pages.AmazonProductCheckoutPage.clickShipToAddressButton(AmazonProductCheckoutPage.java:30)
+at testcases.AmazonProductCheckoutTest.useAddress(AmazonProductCheckoutTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- useAddress -->

@@ -3,7 +3,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
+import java.io.InputStream;
 /**
  * Class reads base settings from the config.properties file
  */
@@ -16,13 +16,10 @@ public class ConfigReader {
 	 * Class constructor loads settings from the file and saves to fields
 	 */
 	public ConfigReader() {
-		FileInputStream fis;
-		try {
-			fis = new FileInputStream("C:\\Users\\Vishal\\eclipse-workspace\\SeleniumJavaTraining_SonalGarg\\src\\main\\java\\com\\ama\\qa\\config\\config.properties");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			System.out.println("Cant't read config.properties file!");
-			return;
+		InputStream fis = getClass().getClassLoader().getResourceAsStream("com/ama/qa/config/config.properties");
+		if (fis == null) {
+		    System.out.println("Can't read config.properties file!");
+		    return;
 		}
 		Properties p = new Properties();
 		try {

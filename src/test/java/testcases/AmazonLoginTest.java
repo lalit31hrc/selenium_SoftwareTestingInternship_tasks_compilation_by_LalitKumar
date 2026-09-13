@@ -35,6 +35,7 @@ public class AmazonLoginTest extends TestBase {
 	public void amazonLogin()
 	{
 		
+
 		amazonLoginPage.enterEmailOrPhone(configReader.getUsername());
 		amazonLoginPage.clickContinue();
 		amazonLoginPage.enterPassword(configReader.getPassword());
