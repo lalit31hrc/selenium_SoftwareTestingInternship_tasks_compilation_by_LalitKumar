@@ -2,8 +2,6 @@ package com.ama.qa.pages;
 
 import java.time.Duration;
 
-import org.checkerframework.checker.units.qual.s;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,8 +21,8 @@ import com.ama.qa.base.TestBase;
 public class AmazonProductDetailsPage extends TestBase {
 	
 	@FindBy(id = "productTitle")WebElement serachedProductTitle;
-	@FindBy(xpath = "//div[@id='corePriceDisplay_desktop_feature_div']//span[@class='a-price-whole']")WebElement serachedProductPrice;
-	@FindBy(xpath = "(//div[@id='rightCol']//input[@id='add-to-cart-button'])[2]")WebElement addToCartButton;
+	@FindBy(xpath = "//div[@id='corePriceDisplay_desktop_feature_div']//span[@class='a-price-whole'] | //span[@class='a-price-whole']")WebElement serachedProductPrice;
+	@FindBy(xpath = "(//div[@id='rightCol']//input[@id='add-to-cart-button'])[2] | //input[@id='add-to-cart-button']")WebElement addToCartButton;
 	@FindBy(xpath="//a[contains(@href,'/cart') and contains(text(),'Go to Cart')]") WebElement proceedToCheckoutButton;
 	
 	WebElement serachProductPanel;
@@ -32,25 +30,33 @@ public class AmazonProductDetailsPage extends TestBase {
     WebDriverWait wait = new WebDriverWait(getdriver(), Duration.ofSeconds(20));
 
 	public AmazonProductDetailsPage(){
-			PageFactory.initElements(getdriver(), this);
-		}
+		PageFactory.initElements(getdriver(), this);
+	}
 	 
 	public String getSearchedProductTitle() {
 		wait.until(ExpectedConditions.visibilityOf(serachedProductTitle));
 		return serachedProductTitle.getText();
 	} 
+
 	public String getSearchedProductPrice() {
+		wait.until(ExpectedConditions.visibilityOf(serachedProductPrice));
 		return serachedProductPrice.getText();
 	} 
+
+	public double getProductPriceAsDouble() {
+		String priceStr = getSearchedProductPrice();
+		String cleanedStr = priceStr.replaceAll("[^0-9.]", "").trim();
+		if (cleanedStr.isEmpty()) {
+			return 0.0;
+		}
+		return Double.parseDouble(cleanedStr);
+	}
 	
-	public void clickOnAddToCart()
-	{
+	public void clickOnAddToCart() {
         addToCartButton.click();
 	}
 	
-	public void clickProceedToCheckOut()
-	{
+	public void clickProceedToCheckOut() {
         proceedToCheckoutButton.click();
 	}
-	
 }

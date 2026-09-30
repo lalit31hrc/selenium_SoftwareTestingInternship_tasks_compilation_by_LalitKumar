@@ -9,15 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">30,053</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">52,985</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testcases.AmazonProductCheckoutTest</td><td><a href="#m0">useAddress</a></td><td rowspan="1">1789307619148</td><td rowspan="1">258</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.AmazonLoginTest</td><td><a href="#m1">amazonLogin</a></td><td rowspan="1">1789307614298</td><td rowspan="1">4844</td></tr><tr class="passedodd"><td rowspan="1">testcases.AmazonProductDetailsTest</td><td><a href="#m2">VerifyProductDetailsAndAddToCart</a></td><td rowspan="1">1789307601340</td><td rowspan="1">11862</td></tr><tr class="passedeven"><td rowspan="2">testcases.AmazonSearchProductsTest</td><td><a href="#m3">clickOnRequiredProduct</a></td><td rowspan="1">1789307600928</td><td rowspan="1">412</td></tr><tr class="passedeven"><td><a href="#m4">serachedProductPageOpened</a></td><td rowspan="1">1789307589746</td><td rowspan="1">11166</td></tr><tr class="passedodd"><td rowspan="1">testcases.ShoppingCartTest</td><td><a href="#m5">SearchForAProduct</a></td><td rowspan="1">1789307613206</td><td rowspan="1">1091</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.AmazonProductCheckoutTest</td><td><a href="#m0">useAddress</a></td><td rowspan="1">1790607457701</td><td rowspan="1">10069</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.AmazonLoginTest</td><td><a href="#m1">amazonLogin</a></td><td rowspan="1">1790607453259</td><td rowspan="1">4440</td></tr><tr class="passedodd"><td rowspan="1">testcases.AmazonProductDetailsTest</td><td><a href="#m2">VerifyProductDetailsAndAddToCart</a></td><td rowspan="1">1790607429671</td><td rowspan="1">23457</td></tr><tr class="passedeven"><td rowspan="2">testcases.AmazonSearchProductsTest</td><td><a href="#m3">clickOnRequiredProduct</a></td><td rowspan="1">1790607428580</td><td rowspan="1">1089</td></tr><tr class="passedeven"><td><a href="#m4">serachedProductPageOpened</a></td><td rowspan="1">1790607415587</td><td rowspan="1">12987</td></tr><tr class="passedodd"><td rowspan="1">testcases.ShoppingCartTest</td><td><a href="#m5">SearchForAProduct</a></td><td rowspan="1">1790607453130</td><td rowspan="1">127</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testcases.AmazonProductCheckoutTest#useAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Checkout blocked: selected product is unavailable/restricted from this seller (Amazon OOS page). This is a live-inventory/seller limitation, not a code defect.
-	at com.ama.qa.pages.AmazonProductCheckoutPage.clickShipToAddressButton(AmazonProductCheckoutPage.java:30)
+<h2>Test</h2><h3 id="m0">testcases.AmazonProductCheckoutTest#useAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;shipToThisAddressButton&apos;]&quot;}
+  (Session info: chrome=153.0.8010.53)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00d72d6a3c18bcc84bd21932310a90ff, findElement {value=//span[@id=&apos;shipToThisAddressButton&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\LALITK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65481}, goog:processID: 13364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65481/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00d72d6a3c18bcc84bd21932310a90ff
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.ama.qa.pages.AmazonProductCheckoutPage.clickShipToAddressButton(AmazonProductCheckoutPage.java:32)
 	at testcases.AmazonProductCheckoutTest.useAddress(AmazonProductCheckoutTest.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">testcases.AmazonLoginTest#amazonLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">testcases.AmazonProductDetailsTest#VerifyProductDetailsAndAddToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">testcases.AmazonSearchProductsTest#clickOnRequiredProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

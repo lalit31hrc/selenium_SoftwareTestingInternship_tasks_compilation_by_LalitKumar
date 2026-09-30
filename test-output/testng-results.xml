@@ -1,68 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="0" skipped="1">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-13T19:23:09 IST" name="Suite" finished-at="2026-09-13T19:23:39 IST" duration-ms="30053">
+  <suite started-at="2026-09-28T20:26:54 IST" name="Suite" finished-at="2026-09-28T20:27:47 IST" duration-ms="52985">
     <groups>
     </groups>
-    <test started-at="2026-09-13T19:23:09 IST" name="Test" finished-at="2026-09-13T19:23:39 IST" duration-ms="30053">
+    <test started-at="2026-09-28T20:26:54 IST" name="Test" finished-at="2026-09-28T20:27:47 IST" duration-ms="52985">
       <class name="testcases.AmazonProductDetailsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductDetailsTest@6025e1b6]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductDetailsTest@6025e1b6]" started-at="2026-09-28T20:26:54 IST" name="setup" finished-at="2026-09-28T20:26:54 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyProductDetailsAndAddToCart()[pri:2, instance:testcases.AmazonProductDetailsTest@6025e1b6]" started-at="2026-09-13T19:23:21 IST" name="VerifyProductDetailsAndAddToCart" finished-at="2026-09-13T19:23:33 IST" duration-ms="11862" status="PASS">
+        <test-method signature="VerifyProductDetailsAndAddToCart()[pri:2, instance:testcases.AmazonProductDetailsTest@6025e1b6]" started-at="2026-09-28T20:27:09 IST" name="VerifyProductDetailsAndAddToCart" finished-at="2026-09-28T20:27:33 IST" duration-ms="23457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductDetailsAndAddToCart -->
       </class> <!-- testcases.AmazonProductDetailsTest -->
       <class name="testcases.AmazonLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonLoginTest@4c402120]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonLoginTest@4c402120]" started-at="2026-09-28T20:26:54 IST" name="setup" finished-at="2026-09-28T20:26:54 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="amazonLogin()[pri:4, instance:testcases.AmazonLoginTest@4c402120]" started-at="2026-09-13T19:23:34 IST" name="amazonLogin" finished-at="2026-09-13T19:23:39 IST" duration-ms="4844" status="PASS">
+        <test-method signature="amazonLogin()[pri:4, instance:testcases.AmazonLoginTest@4c402120]" started-at="2026-09-28T20:27:33 IST" name="amazonLogin" finished-at="2026-09-28T20:27:37 IST" duration-ms="4440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonLogin -->
       </class> <!-- testcases.AmazonLoginTest -->
       <class name="testcases.ShoppingCartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.ShoppingCartTest@22ff4249]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.ShoppingCartTest@22ff4249]" started-at="2026-09-28T20:26:55 IST" name="setup" finished-at="2026-09-28T20:26:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SearchForAProduct()[pri:3, instance:testcases.ShoppingCartTest@22ff4249]" started-at="2026-09-13T19:23:33 IST" name="SearchForAProduct" finished-at="2026-09-13T19:23:34 IST" duration-ms="1091" status="PASS">
+        <test-method signature="SearchForAProduct()[pri:3, instance:testcases.ShoppingCartTest@22ff4249]" started-at="2026-09-28T20:27:33 IST" name="SearchForAProduct" finished-at="2026-09-28T20:27:33 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchForAProduct -->
       </class> <!-- testcases.ShoppingCartTest -->
       <class name="testcases.AmazonSearchProductsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-13T19:23:09 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-28T20:26:54 IST" name="setup" finished-at="2026-09-28T20:26:55 IST" duration-ms="752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="serachedProductPageOpened()[pri:0, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-13T19:23:09 IST" name="serachedProductPageOpened" finished-at="2026-09-13T19:23:20 IST" duration-ms="11166" status="PASS">
+        <test-method signature="serachedProductPageOpened()[pri:0, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-28T20:26:55 IST" name="serachedProductPageOpened" finished-at="2026-09-28T20:27:08 IST" duration-ms="12987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serachedProductPageOpened -->
-        <test-method signature="clickOnRequiredProduct()[pri:1, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-13T19:23:20 IST" name="clickOnRequiredProduct" finished-at="2026-09-13T19:23:21 IST" duration-ms="412" status="PASS">
+        <test-method signature="clickOnRequiredProduct()[pri:1, instance:testcases.AmazonSearchProductsTest@22555ebf]" started-at="2026-09-28T20:27:08 IST" name="clickOnRequiredProduct" finished-at="2026-09-28T20:27:09 IST" duration-ms="1089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnRequiredProduct -->
       </class> <!-- testcases.AmazonSearchProductsTest -->
       <class name="testcases.AmazonProductCheckoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductCheckoutTest@327514f]" started-at="2026-09-13T19:23:07 IST" name="setup" finished-at="2026-09-13T19:23:09 IST" duration-ms="1517" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AmazonProductCheckoutTest@327514f]" started-at="2026-09-28T20:26:35 IST" name="setup" finished-at="2026-09-28T20:26:54 IST" duration-ms="18939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="useAddress()[pri:5, instance:testcases.AmazonProductCheckoutTest@327514f]" started-at="2026-09-13T19:23:39 IST" name="useAddress" finished-at="2026-09-13T19:23:39 IST" duration-ms="258" status="SKIP">
-          <exception class="org.testng.SkipException">
+        <test-method signature="useAddress()[pri:5, instance:testcases.AmazonProductCheckoutTest@327514f]" started-at="2026-09-28T20:27:37 IST" name="useAddress" finished-at="2026-09-28T20:27:47 IST" duration-ms="10069" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Checkout blocked: selected product is unavailable/restricted from this seller (Amazon OOS page). This is a live-inventory/seller limitation, not a code defect.]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='shipToThisAddressButton']"}
+  (Session info: chrome=153.0.8010.53)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00d72d6a3c18bcc84bd21932310a90ff, findElement {value=//span[@id='shipToThisAddressButton'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\LALITK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65481}, goog:processID: 13364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65481/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00d72d6a3c18bcc84bd21932310a90ff]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Checkout blocked: selected product is unavailable/restricted from this seller (Amazon OOS page). This is a live-inventory/seller limitation, not a code defect.
-at com.ama.qa.pages.AmazonProductCheckoutPage.clickShipToAddressButton(AmazonProductCheckoutPage.java:30)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='shipToThisAddressButton']"}
+  (Session info: chrome=153.0.8010.53)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00d72d6a3c18bcc84bd21932310a90ff, findElement {value=//span[@id='shipToThisAddressButton'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\LALITK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65481}, goog:processID: 13364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65481/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00d72d6a3c18bcc84bd21932310a90ff
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.ama.qa.pages.AmazonProductCheckoutPage.clickShipToAddressButton(AmazonProductCheckoutPage.java:32)
 at testcases.AmazonProductCheckoutTest.useAddress(AmazonProductCheckoutTest.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -92,7 +125,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- useAddress -->

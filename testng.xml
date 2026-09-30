@@ -9,6 +9,11 @@
       <class name="testcases.ShoppingCartTest"/>
       <class name="testcases.AmazonLoginTest"/>
       <class name="testcases.AmazonProductCheckoutTest"/>
+      <class name="testcases.ProductFilterTest"/>
+      <class name="testcases.MultipleProductsCartAndPriceTest"/>
+      <class name="testcases.ProductPriceMonitorTest"/>
+      <class name="testcases.CompleteEndToEndCheckoutFlowTest"/>
+      <class name="testcases.BrandPriceRatingFilterTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

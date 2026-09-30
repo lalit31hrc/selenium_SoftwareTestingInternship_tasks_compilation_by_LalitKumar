@@ -12,7 +12,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,22 +26,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Quest_BookAppointment {
 	WebDriver driver;
 	
-	
 	String btn_AddToCartListingPage="\\";
 
-	//By btn_AddToCart=driver.findElement(By.xpath(null));
-	
-	
 	String url = "https://appointment.questdiagnostics.com/schedule-appointment/as-personal-information";
+
 	@BeforeClass
 	public void setup() {
 		url = "https://appointment.questdiagnostics.com/schedule-appointment/as-personal-information";
-		System.setProperty("webdriver.chrome.driver", "E:\\libs\\chromedriver-win64\\chromedriver.exe");
-		// Initialize WebDriver
+		// Selenium 4 automatically manages ChromeDriver binary
 		driver = new ChromeDriver();
-		// Open URL
 		driver.get(url);
-
 	}
 
 	@Test
@@ -52,18 +45,18 @@ public class Quest_BookAppointment {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//button[@aria-label=\"Continue as a guest\"]")));
-		// Find search box and enter text
 		WebElement searchBox = driver.findElement(By.xpath(btn_AddToCartListingPage));
 		searchBox.click();
 		
 		String AppointFormPageTitle=driver.getTitle();
 		
 		assertEquals(AppointFormPageTitle, "Schedule Appointment - Personal information", "Appointment Form Page Displayed");
-		
-	}
-	@AfterTest
-	public void tearDown() {
-		driver.close();
 	}
 
+	@AfterTest
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
+	}
 }
