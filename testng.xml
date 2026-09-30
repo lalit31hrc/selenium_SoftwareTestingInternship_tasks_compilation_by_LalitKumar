@@ -14,6 +14,7 @@
       <class name="testcases.ProductPriceMonitorTest"/>
       <class name="testcases.CompleteEndToEndCheckoutFlowTest"/>
       <class name="testcases.BrandPriceRatingFilterTest"/>
+      <class name="testcases.UserProfileLoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
